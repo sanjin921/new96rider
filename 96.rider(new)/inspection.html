@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>INSPECTION</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>96.RIDER</h1>
+  <h3>유류상태</h3>
+  <div id="car list">
+    <h4>오토</h4>
+    <ul>
+      <li>
+        <label for="6101">6101</label>
+        <input type="number" id="6101" max="100" min="0" value="50" step="5">%
+      </li>
+      <li>
+        <label for="6103">6103</label>
+        <input type="number" id="6103" max="100" min="0" value="50" step="5">%
+      </li>
+      <li>
+        <label for="6120">6120</label>
+        <input type="number" id="6120" max="100" min="0" value="50" step="5">%
+      </li>
+      <li>
+        <label for="6012">6012</label>
+        <input type="number" id="6012" max="100" min="0" value="50" step="5">%
+      </li>
+      <li>
+        <label for="6111">6111</label>
+        <input type="number" id="6111" max="100" min="0" value="50" step="5">%
+      </li>
+      </ul>
+    <h4>스틱</h4>
+     <ul>
+      <li>
+        <label for="1634">1634</label>
+        <input type="number" id="1634" max="100" min="0" value="50" step="5">%
+      </li>
+        <label for="120">120</label>
+        <input type="number" id="120" max="100" min="0" value="50" step="5">%
+      </li>
+      <li>
+        <label for="140">140</label>
+        <input type="number" id="140" max="100" min="0" value="50" step="5">%
+      </li>
+      </ul>
+      </div> <hr>
+      <h2>검차</h2>
+      <p><i><u>08:20</u> 까지 준비하기!</i></p>
+  <ul id="inspection">
+    <li>
+      <label for="day">날짜 : </label> 
+      <input type="date" id="day">
+    </li>
+    <li>
+      <label for="captain">선탑간부님 : </label>
+      <select id="captain">
+        <option>중위 이태승</option>
+        <option selected>상사 김범찬</option>
+        <option>중사 김남현</option>
+        <option>중사 안용현</option>
+      </select>
+    </li>
+    <li>
+      <label for="car">차량 : </label>
+      <input type="number" id="car" max="10" min="0" value="1">대(최대 10대)
+    </li>
+    <li>
+      <label for="memo">차량 특이사항</label>
+      <textarea cols="60" rows="6" placeholder="ex)경고등, 사이드브레이크 등.."></textarea>
+    </li>
+    <div id="buttons">
+      <button type="submit">출발</button>
+      <button type="reset">취소</button>
+    </div>
+</body>
+<foot>
+  <a href="">96여단</a> <a href="">31사단</a> <a href="">2작사</a>
+</foot>
+</html>
